@@ -10,6 +10,7 @@ public class Main {
         System.out.println("size: " + list.size() + "\n");
 
         list.add(10);
+
         list.get(10);
         System.out.println(list);
         list.remove(5);
