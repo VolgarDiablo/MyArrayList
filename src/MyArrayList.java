@@ -16,12 +16,11 @@ public class MyArrayList<E> {
         array[size++] = element;
     }
 
-    public Object remove(int index) {
+    public void remove(int index) {
         if (index < 0 || index >= size) throw new IndexOutOfBoundsException();
         Object removedObject = array[index];
         array[index] = null;
         System.arraycopy(array, index + 1, array, index, size - index);
-        return removedObject;
     }
 
     public void clear() {
